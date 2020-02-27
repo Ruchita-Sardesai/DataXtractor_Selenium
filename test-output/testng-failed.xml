@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" parallel="tests" name="Failed suite [BDD Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Listeners.ITestImpl"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="DataXtractor(failed)">
+    <classes>
+      <class name="Runner.TestRunner">
+        <methods>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runner.TestRunner -->
+    </classes>
+  </test> <!-- DataXtractor(failed) -->
+</suite> <!-- Failed suite [BDD Test Suite] -->
